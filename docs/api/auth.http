@@ -1,0 +1,27 @@
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "john",
+  "password": "azerty123"
+}
+
+###
+
+GET http://localhost:3000/auth/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcyNjI0MDQxMCwiZXhwIjoxNzI2MzI2ODEwfQ.sPqTDl0dDD4YVSXb1SOILh-Ds6oT8E8Mt0p5ak-i9pY
+
+###
+
+POST http://localhost:3000/auth-v2/login
+Content-Type: application/json
+
+{
+  "login": "john",
+  "pass": "azerty123"
+}
+
+###
+
+GET http://localhost:3000/auth-v2/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcyNjI0MzE2NCwiZXhwIjoxNzI2MzI5NTY0fQ.ehEhz5cyn3mD605vDhrL-TMq8uiSjELa-HIlpEUGgEM
